@@ -7,15 +7,14 @@ body {
 }
 
 .qoin-container {
+  min-width: 600px;
   background-color: #FFF;
 }
 
-header.qoin-header {
-  top: 0;
+.qoin-container > header.qoin-header {
   position: fixed;
-  display: block;
-  margin: 0 auto;
   width: 100%;
+  min-width: 600px;
   height: 400px;
   background-image: url("../images/background.png");
   -webkit-background-size: cover;
@@ -27,7 +26,7 @@ header.qoin-header {
   background-repeat: no-repeat;
 }
 
-header.qoin-header .header-text {
+.qoin-container > header.qoin-header .header-text {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -35,29 +34,30 @@ header.qoin-header .header-text {
   color: #FFF;
   text-shadow: 1px 1px 1px #333;
   width: 50%;
+  /*sweet spot for header min and max*/
   min-width: 500px;
   max-width: 680px;
 }
-header.qoin-header .header-text > h1 {
-  font-size: 6em;
-  text-align: center;
+.qoin-container > header.qoin-header .header-text > h1 {
   margin: 0;
+  text-align: center;
+  font-size: 6em;
 }
-header.qoin-header .header-text > p {
+.qoin-container > header.qoin-header .header-text > p {
   position: absolute;
   right: -20px;
-  margin: -20px 0px 0 0;
+  margin: -20px 0 0 0;
   font-size: 1.5em;
 }
 
-section.qoin-contact {
+.qoin-container > section.qoin-contact {
   position: relative;
   top: 400px;
   width: 100%;
   height: 100%;
   background-color: #FFF;
 }
-section.qoin-contact:before {
+.qoin-container > section.qoin-contact:before {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -80,7 +80,7 @@ section.qoin-contact:before {
   background-size: 80px;
 }
 
-section.qoin-contact > article.qoin-about {
+.qoin-container > section.qoin-contact > article.qoin-about {
   display: block;
   position: relative;
   padding-top: 50px;
@@ -91,26 +91,25 @@ section.qoin-contact > article.qoin-about {
   font-size: 1.2em;
 }
 
-section.qoin-contact > article.invite-form-container {
+.qoin-container > section.qoin-contact > article.invite-form-container {
   display: none;
   margin: auto;
   width: 100%;
 }
-
-section.qoin-contact > article.invite-form-container.open {
+.qoin-container > section.qoin-contact > article.invite-form-container.open {
   display: block;
   padding: 5px 0;
   background-color: #ECECEC;
 }
 
-form.invite-form  {
+.qoin-container > section.qoin-contact > article > form.invite-form  {
   margin: 0 auto;
   display: block;
   position: relative;
   padding: 20px 0 5px;
 }
 
-form.invite-form > input {
+.qoin-container > section.qoin-contact > article > form.invite-form > input {
   border: 2px solid #CDCDCD;
   display: block;
   margin: 8px auto;
@@ -120,37 +119,36 @@ form.invite-form > input {
   padding: 10px;
   border-radius: 2px;
 }
-form.invite-form > input::-webkit-input-placeholder {
+.qoin-container > section.qoin-contact > article > form.invite-form > input::-webkit-input-placeholder {
   color: #CDCDCD;
 }
-form.invite-form > input:-moz-placeholder {
+.qoin-container > section.qoin-contact > article > form.invite-form > input:-moz-placeholder {
   color: #CDCDCD;
 }
-form.invite-form > input::-moz-placeholder {
+.qoin-container > section.qoin-contact > article > form.invite-form > input::-moz-placeholder {
   color: #CDCDCD;
 }
-form.invite-form > input:-ms-input-placeholder {
+.qoin-container > section.qoin-contact > article > form.invite-form > input:-ms-input-placeholder {
   color: #CDCDCD;
 }
 
-section.qoin-contact > article > h1 {
+.qoin-container > section.qoin-contact > article > h1 {
   text-align: center;
   color: #333;
   font-size: 1.5em;
   margin-bottom: 5px;
 }
 
-article > button.request-button {
+.qoin-container > section.qoin-contact > article > button.request-button {
   display: block;
   margin: 30px auto 60px;
 }
-
-article > button.request-button.clicked {
+.qoin-container > section.qoin-contact > article > button.request-button.clicked {
   display: none;
 }
 
-article > button.request-button,
-form.invite-form button.invite-form-submit {
+.qoin-container > section.qoin-contact > article > button.request-button,
+.qoin-container > section.qoin-contact > article > form.invite-form button.invite-form-submit {
   background-color: #FF0000;
   color: #FFF;
   border-radius: 2px;
@@ -159,7 +157,7 @@ form.invite-form button.invite-form-submit {
   font-size: 1em;
 }
 
-form.invite-form button.invite-form-submit {
+.qoin-container > section.qoin-contact > article > form.invite-form button.invite-form-submit {
   display: block;
   margin: 15px auto;
 }

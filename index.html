@@ -34,10 +34,10 @@
       </article>
       <article class="invite-form-container">
         <form name="inviteForm" class="invite-form">
-          <input type="text" name="name" placeholder="Your full name" required value="" autofocus  />
-          <input type="text" name="business" placeholder="What's the name of your business?" />
-          <input type="text" name="phone" placeholder="Your phone number" />
-          <input type="text" name="email" placeholder="Your email address" />
+          <input type="text" name="name" placeholder="Your full name" required value="" autofocus maxlength="60" aria-required="true" />
+          <input type="text" name="business" placeholder="What's the name of your business?" maxlength="60" aria-required="true" />
+          <input type="text" name="phone" placeholder="Your phone number" maxlength="20" aria-required="true" />
+          <input type="text" name="email" placeholder="Your email address" maxlength="60" aria-required="true" />
           <button type="button" class="invite-form-submit">
             REQUEST INVITE
           </button>
