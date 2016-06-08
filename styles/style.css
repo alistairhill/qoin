@@ -23,10 +23,14 @@ header {
 .header-text {
   color: #FFF;
   text-align: center;
-  position: fixed;
+  top: 45%;
+  position: absolute;
   vertical-align: middle;
   width: 100%;
   text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  /*font-family: "Times New Roman", Times, serif;*/
+  display: inline-block;
 }
 .header-text > h1 {
   margin: 0;
@@ -36,9 +40,29 @@ header {
 }
 
 .qoin-contact {
+  width: 100%;
+  background-color: #FFF;
   top: 400px;
   position: relative;
 }
 .qoin-contact:before {
-  /*content: " ";*/
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  content: " ";
+  height: 50px;
+  width: 100px;
+  margin: -50px 0 -50px;
+  background-color: #FE4;
+  box-sizing: border-box;
+  border-radius: 50px 50px 0 0;
+}
+
+.qoin-contact > article {
+  padding: 20px;
+}
+
+.qoin-contact > article > p {
+  margin: 0;
 }
