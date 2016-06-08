@@ -1,8 +1,13 @@
 body {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
   color: #333;
+
+
+font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 header {
@@ -20,33 +25,33 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-.header-text {
+header .header-text {
+  position: absolute;
+  top: 80px;
+  width: 400px;
+  margin: 0 auto;
+  width: 400px;
   color: #FFF;
   top: 45%;
-  position: absolute;
-  vertical-align: middle;
-  width: 100%;
   text-shadow: 2px 2px 4px #000;
-  display: inline-block;
   /*font-family: "Times New Roman", Times, serif;*/
   font-size: 2em;
 }
-.header-text > h1 {
+header .header-text > h1 {
   text-align: center;
-
   margin: 0;
 }
-.header-text > p {
+header .header-text > p {
   text-align: right;
 }
 
-.qoin-contact {
+section.qoin-contact {
   width: 100%;
   background-color: #FFF;
   top: 400px;
   position: relative;
 }
-.qoin-contact:before {
+section.qoin-contact:before {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -57,11 +62,11 @@ header {
   margin: -50px 0 -50px;
   background-color: #FE4;
   box-sizing: border-box;
-  border-radius: 50px;
-
+  border-radius: 50px 50px 0 0;
   background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-position: center;
+  background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
@@ -69,12 +74,51 @@ header {
   background-size: 65px;
 }
 
-.qoin-contact > article {
-  /*padding: 20px;*/
+section.qoin-contact > article {
+  display: block;
   position: relative;
-  top: 80px;
+  padding-top: 50px;
+  width: 400px;
+  margin: 0 auto;
 }
 
-.qoin-contact > article > p {
-  margin: 0;
+section.qoin-contact > article > p {
+
+}
+
+section.qoin-contact > article.invite-form-container {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+form.invite-form  {
+  margin: 0 auto;
+  width: 400px;
+  display: block;
+  position: relative;
+  padding: 10px 0;
+}
+
+form.invite-form > input {
+  border: 1px solid #E0E0E0;
+  display: block;
+  margin: 0 auto 10px;
+  width: 200px;
+  padding: 6px;
+}
+
+section.qoin-contact > article > h1 {
+  text-align: center;
+}
+
+article > button.request-button,
+form.invite-form > button.request-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #FF0000;
+  color: #FFF;
+  border-radius: 2px;
+  padding: 5px 20px;
+  border: none;
 }
